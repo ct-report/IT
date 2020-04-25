@@ -11,7 +11,7 @@ Sources | n/a
 Website | n/a
 
 \
-On April 12, **SM_COVID19** - developed by Softmining - has been published on Google Play Store. \
+On April 12, **SM_COVID19** - developed by Softmining - has been published on Google Play Store.
 
 **There is no explicit evidence about which institution has provided the necessary authorization for the publication on the Play Store.**
 
@@ -21,7 +21,7 @@ Play Store | https://play.google.com/store/apps/details?id=it.softmining.project
 Sources | Unreleased
 Website | https://www.smcovid19.org/
 
-APKLAB Analysis
+- APKLAB Analysis
 
 Build | Link
 ------|-----
@@ -30,7 +30,7 @@ Build | Link
 2.5 #13 | https://apklab.io/apk.html?hash=e7d9d846e3579d467ece5c2dc50a6f54a19d223caf131a6ab4f2bd28a0dad63c
 2.4 #12 | https://apklab.io/apk.html?hash=96f8f365f0e259d8ec3fb1c959359a85c5ecec576ef2fd1bf9e3813a2a59a4fd
 
-JoeSandbox Report
+- JoeSandbox Report
 
 Build | Link
 ------|-----
@@ -38,6 +38,14 @@ Build | Link
 2.6 #14 | https://www.joesandbox.com/analysis/223624/0/html
 2.5 #13 | https://www.joesandbox.com/analysis/223468/0/html
 2.4 #12 | https://www.joesandbox.com/analysis/223210/0/html
+
+----------------------------------------------
+
+Other Proposed Regional/National solutions
+
+Name | Sources | References
+STOP CORONAVIRUS FVG | n/a | Regional FVG based on STOPP CORONA https://github.com/ct-report/AT
+COVID COMMUNITY ALERT | https://gitlab.com/coronavirus-outbreak-control | TCN based https://coronavirus-outbreak-control.github.io/web/
 
 
 
