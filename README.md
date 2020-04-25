@@ -44,6 +44,7 @@ Build | Link
 Other Proposed Regional/National solutions
 
 Name | Sources | References
+-----|---------|-----------
 STOP CORONAVIRUS FVG | n/a | Regional FVG based on STOPP CORONA https://github.com/ct-report/AT
 COVID COMMUNITY ALERT | https://gitlab.com/coronavirus-outbreak-control | TCN based https://coronavirus-outbreak-control.github.io/web/
 
