@@ -13,7 +13,7 @@ Website | n/a
 \
 On April 12, **SM_COVID19** - developed by Softmining - has been published on Google Play Store.
 
-**There is no explicit evidence about which institution has provided the necessary authorization for the publication on the Play Store.**
+**There is no explicit evidence about which institution has provided the required authorizations (according to COVID-19 app guidelines).**
 
 **The Italian Ministry for Digital Innovation - Paola Pisano - hasn't replied yet to the requests for checks and clarifications.**
 
@@ -43,10 +43,27 @@ Build | Link
 
 Other Proposed Regional/National solutions
 
-Name | Sources | References
------|---------|-----------
-STOP CORONAVIRUS FVG | n/a | Regional FVG based on STOPP CORONA https://github.com/ct-report/AT
-COVID COMMUNITY ALERT | https://gitlab.com/coronavirus-outbreak-control | TCN based https://coronavirus-outbreak-control.github.io/web/
+**STOP CORONAVIRUS FVG** developed by Accenture & tested by Insiel for Italian region Friuli Venezia Giulia
+
+Sources | References
+--------|-----------
+Unreleased | Based on STOPP CORONA https://github.com/ct-report/AT
 
 
+**COVID COMMUNITY ALERT** - one of the proposals for the Government official app
 
+Sources | References
+--------|-----------
+https://gitlab.com/coronavirus-outbreak-control | TCN based https://coronavirus-outbreak-control.github.io/web/
+
+- APKLAB Analysis
+
+Build | Link
+------|-----
+1.0.2.2 #100002 | https://apklab.io/apk.html?hash=37aa57294534b41eb11b2e675175868d16be94a107ff4fa5f3e76d83adfa3bb0
+
+- JoeSandbox Report
+
+Build | Link
+------|-----
+1.0.2.2 #100002 | https://www.joesandbox.com/analysis/225362/0/html
