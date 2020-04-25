@@ -47,9 +47,9 @@ Other Proposed Regional/National solutions
 
 Sources | References
 --------|-----------
-Unreleased | Based on STOPP CORONA https://github.com/ct-report/AT
+Unreleased | Based on STOPP CORONA AT https://github.com/ct-report/AT
 
-
+\
 **COVID COMMUNITY ALERT** - one of the proposals for the Government official app
 
 Sources | References
