@@ -18,6 +18,7 @@ On April 12, **SM_COVID19** - developed by Softmining - has been published on Go
 **The Italian Ministry for Digital Innovation - Paola Pisano - hasn't replied yet to the requests for checks and clarifications.**
 
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
+-----------|-------------------------------------------------------------------------------------------
 Sources | Unreleased
 Website | https://www.smcovid19.org/
 
