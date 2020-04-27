@@ -48,7 +48,7 @@ Build | Link
 
 ----------------------------------------------
 
-Other Proposed Regional/National solutions
+- Other Proposed Regional/National solutions
 
 **STOP CORONAVIRUS FVG** developed by Accenture & tested by Insiel for Italian region Friuli Venezia Giulia
 
