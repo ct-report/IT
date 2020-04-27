@@ -57,20 +57,8 @@ Sources | References
 Unreleased | Based on STOPP CORONA AT https://github.com/ct-report/AT
 
 \
-**COVID COMMUNITY ALERT** - one of the proposals for the Government official app
+**COVID COMMUNITY ALERT** - one of the proposals for the Government official app. Decentralized solution based on TCN protocol.
 
 Sources | References
 --------|-----------
-https://gitlab.com/coronavirus-outbreak-control | TCN based https://coronavirus-outbreak-control.github.io/web/
-
-- APKLAB Analysis
-
-Build | Link
-------|-----
-1.0.2.2 #100002 | https://apklab.io/apk.html?hash=37aa57294534b41eb11b2e675175868d16be94a107ff4fa5f3e76d83adfa3bb0
-
-- JoeSandbox Report
-
-Build | Link
-------|-----
-1.0.2.2 #100002 | https://www.joesandbox.com/analysis/225362/0/html
+https://gitlab.com/coronavirus-outbreak-control | Based on TCN Protocol https://github.com/ct-report/TCN
