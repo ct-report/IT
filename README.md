@@ -17,6 +17,12 @@ On April 12, **SM_COVID19** - developed by Softmining - has been published on Go
 
 **The Italian Ministry for Digital Innovation - Paola Pisano - hasn't replied yet to the requests for checks and clarifications.**
 
+It's a centralized solution. Every 60 seconds or 5 minutes (according to indoors/outdoors mode) it checks proximity/interactions with other peers (via Bluetooth/BLE) and retrieves the device location (Wi-Fi and GPS - if allowed by the user). Then it uploads such data to a Firebase instance.
+
+Beta releases (before the submission to Play Store) had critical issues about data validation = database tampering with fake user & location data. Until now, production releases haven't been enabled to check past interactions with those users, that have been officially confirmed as infected by Health Authorities.
+
+Still in development.     
+
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
 -----------|-------------------------------------------------------------------------------------------
 Sources | Unreleased
