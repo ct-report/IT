@@ -32,6 +32,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+3.2 #18 | https://apklab.io/apk.html?hash=1db0fa65cba95b9e5570e8ff12bdd3db94f11271ca3293b4f166ac36921241c7
 3.1 #16 | https://apklab.io/apk.html?hash=a82f5c9abea3214adc93ee811c43fd31355982fc824ffc4d813072ece5ab6250
 2.6 #14 | https://apklab.io/apk.html?hash=98a4500cbe144b74640394005c3781c4633c1dbbd235e64b7363e7008a941ebf
 2.5 #13 | https://apklab.io/apk.html?hash=e7d9d846e3579d467ece5c2dc50a6f54a19d223caf131a6ab4f2bd28a0dad63c
@@ -41,6 +42,7 @@ Build | Link
 
 Build | Link
 ------|-----
+3.2 #18 | https://www.joesandbox.com/analysis/226247/0/html
 3.1 #16 | https://www.joesandbox.com/analysis/225349/0/html
 2.6 #14 | https://www.joesandbox.com/analysis/223624/0/html
 2.5 #13 | https://www.joesandbox.com/analysis/223468/0/html
