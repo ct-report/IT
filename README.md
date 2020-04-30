@@ -32,6 +32,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+3.3 #19 | https://apklab.io/apk.html?hash=74610ea4d89d1a01ccfcc64adb65245526c36fbbec5a5b569ece21cb230f3cf2
 3.2 #18 | https://apklab.io/apk.html?hash=1db0fa65cba95b9e5570e8ff12bdd3db94f11271ca3293b4f166ac36921241c7
 3.1 #16 | https://apklab.io/apk.html?hash=a82f5c9abea3214adc93ee811c43fd31355982fc824ffc4d813072ece5ab6250
 2.6 #14 | https://apklab.io/apk.html?hash=98a4500cbe144b74640394005c3781c4633c1dbbd235e64b7363e7008a941ebf
@@ -42,6 +43,7 @@ Build | Link
 
 Build | Link
 ------|-----
+3.3 #19 | https://www.joesandbox.com/analysis/226714/0/html
 3.2 #18 | https://www.joesandbox.com/analysis/226247/0/html
 3.1 #16 | https://www.joesandbox.com/analysis/225349/0/html
 2.6 #14 | https://www.joesandbox.com/analysis/223624/0/html
@@ -59,7 +61,7 @@ Sources | References
 Unreleased | Based on STOPP CORONA AT https://github.com/ct-report/AT
 
 \
-**COVID COMMUNITY ALERT** - one of the proposals for the Government official app. Decentralized solution based on TCN protocol.
+**COVID COMMUNITY ALERT** - one of the 2 proposals in the final shortlist for the official Government app.
 
 Sources | References
 --------|-----------
