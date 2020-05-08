@@ -17,7 +17,7 @@ On April 12, **SM_COVID19** - developed by Softmining - has been published on Go
 
 **The Italian Ministry for Digital Innovation - Paola Pisano - hasn't replied yet to the requests for checks and clarifications.**
 
-It's a centralized solution. Every 60 seconds or 5 minutes (according to outdoors/indoors mode) it checks proximity/interactions with other peers (via Bluetooth/BLE) and retrieves the device location (Wi-Fi and GPS - if allowed by the user). Then it uploads such data to a Firebase instance.
+It's a centralized solution. Every 60 seconds or 5 minutes (according to indoors/outdoors mode) it checks proximity/interactions with other peers (via Bluetooth/BLE) and retrieves the device location (Wi-Fi and GPS - if allowed by the user). Then it uploads such data to a Firebase instance.
 
 Beta releases (before the submission to Play Store) had critical issues about data validation = database tampering with fake user & location data. Until now, production releases haven't been enabled to check past interactions with those users, that have been officially confirmed as infected by Health Authorities.
 
@@ -32,6 +32,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+3.5 #21 | https://apklab.io/apk.html?hash=cc930ca16d75cb3b2a66fe7fc69a2fc66e05f37cae5ab39694096f0eb317131e
 3.4 #20 | https://apklab.io/apk.html?hash=b060d73007a3b2969f9a6a848b1e4bc77a4d566663344dd594eaeb2f6142c4d6
 3.3 #19 | https://apklab.io/apk.html?hash=74610ea4d89d1a01ccfcc64adb65245526c36fbbec5a5b569ece21cb230f3cf2
 3.2 #18 | https://apklab.io/apk.html?hash=1db0fa65cba95b9e5570e8ff12bdd3db94f11271ca3293b4f166ac36921241c7
@@ -44,6 +45,7 @@ Build | Link
 
 Build | Link
 ------|-----
+3.5 #21 | https://www.joesandbox.com/analysis/228751/0/html
 3.4 #20 | https://www.joesandbox.com/analysis/227111/0/html
 3.3 #19 | https://www.joesandbox.com/analysis/226714/0/html
 3.2 #18 | https://www.joesandbox.com/analysis/226247/0/html
