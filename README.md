@@ -21,7 +21,9 @@ It's a centralized solution. Every 60 seconds or 5 minutes (according to indoors
 
 Beta releases (before the submission to Play Store) had critical issues about data validation = database tampering with fake user & location data. Until now, production releases haven't been enabled to check past interactions with those users, that have been officially confirmed as infected by Health Authorities.
 
-Still in development.     
+There are still issues with User ID generation (simple concatenation of Android Device ID) and unneeded permissions.
+
+App still in development.     
 
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
 -----------|-------------------------------------------------------------------------------------------
