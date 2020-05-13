@@ -11,7 +11,7 @@ Sources | n/a
 Website | n/a
 
 \
-On April 12, **SM_COVID19** - developed by Softmining - has been published on Google Play Store.
+On April 1st, **SM_COVID19** - developed by Softmining - has been published on Google Play Store (App changed name on April 12).
 
 **There is no explicit evidence about which institution has provided the required authorizations (according to COVID-19 app guidelines).**
 
@@ -23,7 +23,7 @@ Beta releases (before the submission to Play Store) had critical issues about da
 
 There are still issues with User ID generation (simple concatenation of Android Device ID) and unneeded permissions.
 
-App still in development.     
+App still in development (30k downloads from Google Play Store - 10k active users).
 
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
 -----------|-------------------------------------------------------------------------------------------
@@ -34,6 +34,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+3.6 #22 | https://apklab.io/apk.html?hash=5b012eb6e0cef92ffce352a84edbe4a9833d1dd6a507554efc2030bd34b7fc11
 3.5 #21 | https://apklab.io/apk.html?hash=cc930ca16d75cb3b2a66fe7fc69a2fc66e05f37cae5ab39694096f0eb317131e
 3.4 #20 | https://apklab.io/apk.html?hash=b060d73007a3b2969f9a6a848b1e4bc77a4d566663344dd594eaeb2f6142c4d6
 3.3 #19 | https://apklab.io/apk.html?hash=74610ea4d89d1a01ccfcc64adb65245526c36fbbec5a5b569ece21cb230f3cf2
@@ -47,6 +48,7 @@ Build | Link
 
 Build | Link
 ------|-----
+3.6 #22 | https://www.joesandbox.com/analysis/229829/0/html
 3.5 #21 | https://www.joesandbox.com/analysis/228751/0/html
 3.4 #20 | https://www.joesandbox.com/analysis/227111/0/html
 3.3 #19 | https://www.joesandbox.com/analysis/226714/0/html
