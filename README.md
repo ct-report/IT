@@ -7,7 +7,7 @@ On April 22, it has been announced that IMMUNI would no longer use a centralized
 
 Play Store | n/a
 -----------|----
-Sources | n/a
+Sources & Documentation | https://github.com/immuni-app 
 Website | n/a
 
 \
