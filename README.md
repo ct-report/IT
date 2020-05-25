@@ -16,8 +16,8 @@ Website | n/a
 
 Build | Link
 ------|-----
-1.0.0 #1000000 Debug | n/a
-1.0.0 #1000000 Release | n/a
+1.0.0 #1000000 Debug | https://apklab.io/apk.html?hash=59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983
+1.0.0 #1000000 Release | https://apklab.io/apk.html?hash=75c4bace9cffad60c6525bbd170b1430f090634720a9a01d133d3628b5a9c97d
 
 
 - JoeSandbox Report
