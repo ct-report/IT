@@ -34,7 +34,7 @@ Build | Link
 1.0.0 #1000000 Debug | https://www.virustotal.com/gui/file/59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983/details
 1.0.0 #1000000 Release | https://www.virustotal.com/gui/file/75c4bace9cffad60c6525bbd170b1430f090634720a9a01d133d3628b5a9c97d/details
 
-\
+
 ----------------------------------------------
 
 On April 1st, **SM_COVID19** - developed by Softmining - has been published on Google Play Store (App changed name on April 12).
