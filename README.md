@@ -5,12 +5,35 @@ On April 16, the COVID-19 emergency commissioner has declared **IMMUNI** - devel
 
 On April 22, it has been announced that IMMUNI would no longer use a centralized model (PEPP-PT), but instead a decentralized one (DP^3T based) together with the new Apple+Google 'Exposure Notification' (BLE Contact Tracing) API. The release of such Apple+Google API to developers is scheduled for April 28.
 
+**May 23 : the first public release of source code for iOS/Android apps & CI Scheduler.**
+
 Play Store | n/a
 -----------|----
 Sources & Documentation | https://github.com/immuni-app 
 Website | n/a
 
+- APKLAB Analysis
+
+Build | Link
+------|-----
+1.0.0 #1000000 | n/a
+
+
+- JoeSandbox Report
+
+Build | Link
+------|-----
+1.0.0 #1000000 | https://www.joesandbox.com/analysis/232698/0/html
+
+- VirusTotal Details
+
+Build | Link
+------|-----
+1.0.0 #1000000 | https://www.virustotal.com/gui/file/59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983/details
+
 \
+----------------------------------------------
+
 On April 1st, **SM_COVID19** - developed by Softmining - has been published on Google Play Store (App changed name on April 12).
 
 **There is no explicit evidence about which institution has provided the required authorizations (according to COVID-19 app guidelines).**
