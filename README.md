@@ -36,6 +36,7 @@ Build | Link
 
 
 ----------------------------------------------
+**Other Italian proposals**
 
 On April 1st, **SM_COVID19** - developed by Softmining - has been published on Google Play Store (App changed name on April 12).
 
