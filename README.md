@@ -16,6 +16,7 @@ Website | n/a
 
 Build | Link
 ------|-----
+1.0.0 #1000563 Release | https://apklab.io/apk.html?hash=8f64b7fe497f94bc63cc1b3beeb5fe8ab7793b07e1c15aaceec11ff56c4c66a7
 1.0.0 #1000000 Debug | https://apklab.io/apk.html?hash=59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983
 1.0.0 #1000000 Release | https://apklab.io/apk.html?hash=75c4bace9cffad60c6525bbd170b1430f090634720a9a01d133d3628b5a9c97d
 
@@ -24,6 +25,7 @@ Build | Link
 
 Build | Link
 ------|-----
+1.0.0 #1000563 Release | https://www.joesandbox.com/analysis/233888/0/html
 1.0.0 #1000000 Debug | https://www.joesandbox.com/analysis/232698/0/html
 1.0.0 #1000000 Release | https://www.joesandbox.com/analysis/232703/0/html
 
@@ -31,9 +33,11 @@ Build | Link
 
 Build | Link
 ------|-----
+1.0.0 #1000563 Release | https://www.virustotal.com/gui/file/8f64b7fe497f94bc63cc1b3beeb5fe8ab7793b07e1c15aaceec11ff56c4c66a7/details
 1.0.0 #1000000 Debug | https://www.virustotal.com/gui/file/59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983/details
 1.0.0 #1000000 Release | https://www.virustotal.com/gui/file/75c4bace9cffad60c6525bbd170b1430f090634720a9a01d133d3628b5a9c97d/details
 
+\
 
 ----------------------------------------------
 **Other Italian proposals**
