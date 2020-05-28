@@ -7,6 +7,8 @@ On April 22, it has been announced that IMMUNI would no longer use a centralized
 
 **On May 23 the first public release of source code for iOS/Android apps & CI Scheduler has been uploaded to Github.**
 
+**On May 28 also the first public release of source code for backend (Common, OTP, Analytics, App Configuration, Exposure Ingestion & Reporting) has been uploaded to Github.**
+
 Play Store | n/a
 -----------|----
 Sources & Documentation | https://github.com/immuni-app 
