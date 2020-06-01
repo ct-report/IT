@@ -9,15 +9,18 @@ On April 22, it has been announced that IMMUNI would no longer use a centralized
 
 **On May 28 also the first public release of source code for backend (Common, OTP, Analytics, App Configuration, Exposure Ingestion & Reporting) has been uploaded to Github.**
 
-Play Store | n/a
------------|----
+**On June 1st first official release has been published on Google Play Store.**
+
+Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalute.immuni
+-----------|-----------------------------------------------------------------------------
 Sources & Documentation | https://github.com/immuni-app 
-Website | n/a
+Website | https://www.immuni.italia.it/
 
 - APKLAB Analysis
 
 Build | Link
 ------|-----
+1.0.0 #1000975 Play Store | https://apklab.io/apk.html?hash=5e1c53dd55d28e91de78109e3cdac4797ba551c79f3608e8b517be243dd4535f
 1.0.0 #1000975 Release | https://apklab.io/apk.html?hash=8736a2c233e368b9b9c160f4b1c828329bff70d70bb1c3678aff0eaa11c555e7
 1.0.0 #1000563 Release | https://apklab.io/apk.html?hash=8f64b7fe497f94bc63cc1b3beeb5fe8ab7793b07e1c15aaceec11ff56c4c66a7
 1.0.0 #1000000 Debug | https://apklab.io/apk.html?hash=59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983
@@ -28,6 +31,7 @@ Build | Link
 
 Build | Link
 ------|-----
+1.0.0 #1000975 Play Store | https://www.joesandbox.com/analysis/234702/0/html
 1.0.0 #1000975 Release | https://www.joesandbox.com/analysis/234402/0/html
 1.0.0 #1000563 Release | https://www.joesandbox.com/analysis/233888/0/html
 1.0.0 #1000000 Debug | https://www.joesandbox.com/analysis/232698/0/html
