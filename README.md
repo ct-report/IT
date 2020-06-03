@@ -20,6 +20,7 @@ Website | https://www.immuni.italia.it/
 
 Build | Link
 ------|-----
+1.0.1 #1011346 Play Store | https://apklab.io/apk.html?hash=873d3125965864e94dd4230dabe4c127aa8104d769607be8d0b6f3ccf7b647ca
 1.0.0 #1000975 Play Store | https://apklab.io/apk.html?hash=5e1c53dd55d28e91de78109e3cdac4797ba551c79f3608e8b517be243dd4535f
 1.0.0 #1000975 Release | https://apklab.io/apk.html?hash=8736a2c233e368b9b9c160f4b1c828329bff70d70bb1c3678aff0eaa11c555e7
 1.0.0 #1000563 Release | https://apklab.io/apk.html?hash=8f64b7fe497f94bc63cc1b3beeb5fe8ab7793b07e1c15aaceec11ff56c4c66a7
@@ -31,6 +32,7 @@ Build | Link
 
 Build | Link
 ------|-----
+1.0.1 #1011346 Play Store | https://www.joesandbox.com/analysis/235349/0/html
 1.0.0 #1000975 Play Store | https://www.joesandbox.com/analysis/234702/0/html
 1.0.0 #1000975 Release | https://www.joesandbox.com/analysis/234402/0/html
 1.0.0 #1000563 Release | https://www.joesandbox.com/analysis/233888/0/html
@@ -64,6 +66,7 @@ There are still issues with User ID generation (simple concatenation of Android 
 
 App still in development (30k downloads from Google Play Store - 10k active users).
 
+
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
 -----------|-------------------------------------------------------------------------------------------
 Sources | Unreleased
@@ -73,6 +76,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+3.8 #24 | https://apklab.io/apk.html?hash=bf815c40391c3a615130a2579b86e22ee3f903dad371dd7cc36a3ba8d02575f4
 3.6 #22 | https://apklab.io/apk.html?hash=5b012eb6e0cef92ffce352a84edbe4a9833d1dd6a507554efc2030bd34b7fc11
 3.5 #21 | https://apklab.io/apk.html?hash=cc930ca16d75cb3b2a66fe7fc69a2fc66e05f37cae5ab39694096f0eb317131e
 3.4 #20 | https://apklab.io/apk.html?hash=b060d73007a3b2969f9a6a848b1e4bc77a4d566663344dd594eaeb2f6142c4d6
@@ -87,6 +91,7 @@ Build | Link
 
 Build | Link
 ------|-----
+3.8 #24 | https://www.joesandbox.com/analysis/235357/0/html
 3.6 #22 | https://www.joesandbox.com/analysis/229829/0/html
 3.5 #21 | https://www.joesandbox.com/analysis/228751/0/html
 3.4 #20 | https://www.joesandbox.com/analysis/227111/0/html
