@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/home" app:startDestination="@id/homeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/webview" />
+    <include app:graph="@navigation/howitworks" />
+    <fragment android:label="homeFragment" android:name="it.ministerodellasalute.immuni.ui.home.HomeFragment" android:id="@id/homeFragment" />
+    <dialog android:label="HowItWorksDialogFragment" android:name="it.ministerodellasalute.immuni.ui.howitworks.HowItWorksDialogFragment" android:id="@id/howItWorksDialogFragment" />
+    <action android:id="@id/action_how_it_works_dialog" app:destination="@id/howItWorksDialogFragment" />
+    <activity android:label="FaqActivity" android:name="it.ministerodellasalute.immuni.ui.faq.FaqActivity" android:id="@id/faqActivity" />
+    <action android:id="@id/action_faq_activity" app:destination="@id/faqActivity" />
+    <action android:id="@id/action_webview" app:destination="@id/webview">
+        <argument android:name="url" app:argType="string" app:nullable="false" />
+    </action>
+    <action android:id="@id/action_howitworks" app:destination="@id/howitworks">
+        <argument android:name="showFaq" app:argType="boolean" app:nullable="false" />
+    </action>
+    <activity android:label="OnboardingActivity" android:name="it.ministerodellasalute.immuni.ui.onboarding.OnboardingActivity" android:id="@id/onboardingActivity">
+        <argument android:name="isEditingProvince" app:argType="boolean" />
+    </activity>
+    <action android:id="@id/action_onboarding_activity" app:destination="@id/onboardingActivity" />
+    <dialog android:name="it.ministerodellasalute.immuni.ui.suggestions.StateDefaultDialogFragment" android:id="@id/stateDefaultDialog" />
+    <action android:id="@id/action_state_default" app:destination="@id/stateDefaultDialog" />
+    <dialog android:name="it.ministerodellasalute.immuni.ui.suggestions.StateCloseDialogFragment" android:id="@id/stateCloseDialog" />
+    <action android:id="@id/action_state_close" app:destination="@id/stateCloseDialog" />
+    <dialog android:name="it.ministerodellasalute.immuni.ui.suggestions.StatePositiveDialogFragment" android:id="@id/statePositiveDialog" />
+    <action android:id="@id/action_state_positive" app:destination="@id/statePositiveDialog" />
+</navigation>

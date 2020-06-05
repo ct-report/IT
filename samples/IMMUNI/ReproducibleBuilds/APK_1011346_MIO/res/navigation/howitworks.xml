@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/howitworks" app:startDestination="@id/howItWorksDialogFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <dialog android:label="HowItWorksDialogFragment" android:name="it.ministerodellasalute.immuni.ui.howitworks.HowItWorksDialogFragment" android:id="@id/howItWorksDialogFragment">
+        <argument android:name="showFaq" app:argType="boolean" app:nullable="false" />
+    </dialog>
+    <activity android:label="FaqActivity" android:name="it.ministerodellasalute.immuni.ui.faq.FaqActivity" android:id="@id/faqActivity" />
+    <action android:id="@id/action_faq_activity" app:destination="@id/faqActivity" />
+</navigation>

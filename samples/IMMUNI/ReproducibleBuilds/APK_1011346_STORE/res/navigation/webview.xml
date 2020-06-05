@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/webview" app:startDestination="@id/webViewPopup"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <dialog android:label="WebViewPopup" android:name="it.ministerodellasalute.immuni.ui.dialog.WebViewPopup" android:id="@id/webViewPopup">
+        <argument android:name="url" app:argType="string" app:nullable="false" />
+    </dialog>
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/settings" app:startDestination="@id/settingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/webview" />
+    <include app:graph="@navigation/faq" />
+    <fragment android:label="homeFragment" android:name="it.ministerodellasalute.immuni.ui.settings.SettingsFragment" android:id="@id/settingsFragment" />
+    <fragment android:label="UploadVerification" android:name="it.ministerodellasalute.immuni.ui.otp.OtpFragment" android:id="@id/otpFragment" />
+    <action android:id="@id/action_upload_data" app:destination="@id/otpFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    <action android:id="@id/action_faq" app:destination="@id/faq" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    <activity android:label="UploadDataActivity" android:name="it.ministerodellasalute.immuni.ui.upload.UploadDataActivity" android:id="@id/uploadActivity">
+        <argument android:name="token" app:argType="it.ministerodellasalute.immuni.ui.otp.OtpToken" app:nullable="false" />
+    </activity>
+    <action android:id="@id/action_upload_activity" app:destination="@id/uploadActivity" />
+    <activity android:label="OnboardingActivity" android:name="it.ministerodellasalute.immuni.ui.onboarding.OnboardingActivity" android:id="@id/onboardingActivity">
+        <argument android:name="isEditingProvince" app:argType="boolean" />
+    </activity>
+    <action android:id="@id/action_onboarding_activity" app:destination="@id/onboardingActivity" />
+    <action android:id="@id/action_webview" app:destination="@id/webview">
+        <argument android:name="url" app:argType="string" app:nullable="false" />
+    </action>
+    <dialog android:name="it.ministerodellasalute.immuni.ui.privacy.PrivacyDialogFragment" android:id="@id/privacy" />
+    <action android:id="@id/action_privacy" app:destination="@id/privacy" />
+</navigation>

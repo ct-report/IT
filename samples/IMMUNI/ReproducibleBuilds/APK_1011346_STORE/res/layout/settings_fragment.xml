@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/settingsLayout" android:background="@color/background_darker" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:background="@color/background_darker" android:paddingBottom="16.0dip" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="40.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:text="@string/settings_setting_section_data" style="@style/SettingsMenuItem.Header" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SettingsMenuCard">
+                    <LinearLayout style="@style/SettingsMenuLayout">
+                        <LinearLayout android:id="@id/dataLoadButton" style="@style/SettingsMenuItemArrowLayout">
+                            <TextView android:text="@string/settings_setting_load_data" style="@style/SettingsMenuItem.WithArrow" />
+                            <include layout="@layout/settings_menu_item_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:text="@string/settings_setting_section_info" style="@style/SettingsMenuItem.Header" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SettingsMenuCard">
+                    <LinearLayout style="@style/SettingsMenuLayout">
+                        <LinearLayout android:id="@id/faqButton" style="@style/SettingsMenuItemArrowLayout">
+                            <TextView android:text="@string/settings_setting_faq" style="@style/SettingsMenuItem.WithArrow" />
+                            <include layout="@layout/settings_menu_item_arrow" />
+                        </LinearLayout>
+                        <include layout="@layout/settings_content_divider" />
+                        <TextView android:id="@id/termsOfServiceButton" android:text="@string/settings_setting_tos" style="@style/SettingsMenuItem" />
+                        <include layout="@layout/settings_content_divider" />
+                        <TextView android:id="@id/privacyPolicyButton" android:text="@string/settings_setting_privacy" style="@style/SettingsMenuItem" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:text="@string/settings_setting_section_general" style="@style/SettingsMenuItem.Header" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SettingsMenuCard">
+                    <LinearLayout style="@style/SettingsMenuLayout">
+                        <TextView android:id="@id/changeProvinceButton" android:text="@string/settings_setting_chage_province" style="@style/SettingsMenuItem" />
+                        <include layout="@layout/settings_content_divider" />
+                        <TextView android:id="@id/sendFeedbackButton" android:text="@string/settings_setting_leave_review" style="@style/SettingsMenuItem" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:gravity="center" android:id="@id/applicationVersion" android:padding="36.0dip" android:layout_margin="0.0dip" style="@style/SettingsMenuItem.Header" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" android:backgroundTint="@android:color/transparent" app:background="@android:color/transparent" app:backgroundTint="@android:color/transparent" app:elevation="0.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbarLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@android:color/transparent" app:expandedTitleGravity="bottom" app:expandedTitleMarginStart="32.0dip" app:expandedTitleMarginTop="32.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+            <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_collapseMode="pin" app:layout_collapseParallaxMultiplier="0.5">
+                <TextView android:textSize="27.0dip" android:gravity="start" android:id="@id/pageTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/tabbar_title_settings" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/H1Heading" />
+                <include android:id="@id/toolbarSeparator" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_separator_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/toolbar_separator" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin">
+                <TextView android:ellipsize="end" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tabbar_title_settings" android:singleLine="true" android:textAllCaps="false" android:paddingStart="@dimen/activity_vertical_margin" android:paddingEnd="32.0dip" style="@style/H1NavBar" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

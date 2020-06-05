@@ -1,0 +1,40 @@
+.class public interface abstract Lcom/google/android/gms/internal/nearby/zzgn;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-nearby@@18.0.2-eap"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# virtual methods
+.method public abstract zza(Lcom/google/android/gms/internal/nearby/zzho;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract zza(Lcom/google/android/gms/internal/nearby/zzhq;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract zza(Lcom/google/android/gms/internal/nearby/zzhw;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract zza(Lcom/google/android/gms/internal/nearby/zzhy;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
