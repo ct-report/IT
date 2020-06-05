@@ -22,7 +22,7 @@ keyAlias=<your_key_alias>
 storePassword=<your_keystore_password>
 ```
 		
-- Check installed SDK & NDK side-by-side in Android Studio system settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones) 
+- Check installed SDK & NDK side-by-side in Android Studio (3.6.3 / 4.0) system settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones) 
 
 Name | Version
 -----|--------
@@ -57,11 +57,32 @@ adb shell pm path it.ministerodellasalute.immuni
 
 These files won't match :
 
-- AndroidManifest.xml
-- META-INF/BNDLTOOL.RSA
-- META-INF/BNDLTOOL.SF
+- AndroidManifest.xml ( _changes performed by Google Play during app publishing_ )
+
+![](photo_androidmanifest_xml.png)
+
+- META-INF/BNDLTOOL.RSA ( _different sign certificate_ )
+
+- META-INF/BNDLTOOL.SF ( _different SHA-256-Digest for AndroidManifest.xml_ )
+
+![](photo_bdnltool_sf.png)
+
+- META-INF/MANIFEST.MF ( _different SHA-256-Digest for AndroidManifest.xml_ )
+
+![](photo_manifest_mf.png)
 
 
+## Classes.dex situation
+
+Owing to Kotlin reflection/annotation issues there is a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+
+Compiled one doesn't include actionWebview method.
+
+![](photo_smali.png) 
+
+![](photo_actionwebview.png)
+
+Checking Task Logs in order to fix / align environment (WIP).
 
 
 
