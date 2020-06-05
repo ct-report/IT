@@ -74,15 +74,15 @@ These files won't match :
 
 ## Classes.dex situation
 
-Owing to Kotlin reflection/annotation issues there is a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+Owing to Kotlin reflection issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
-Compiled one doesn't include actionWebview method.
+Compiled one doesn't include yet right actionWebview method for 2 dialogs.
 
 ![](photo_smalichk.png) 
 
 ![](photo_actionwebview.png)
 
-Checking Task Logs in order to fix / align environment (WIP).
+Checking Task Logs in order to fix / align environment without editing the source code (WIP).
 
 
 
