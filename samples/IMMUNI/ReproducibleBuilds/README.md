@@ -78,7 +78,7 @@ Owing to Kotlin reflection/annotation issues there is a mismatch between Classes
 
 Compiled one doesn't include actionWebview method.
 
-![](photo_smali.png) 
+![](photo_smalichk.png) 
 
 ![](photo_actionwebview.png)
 
