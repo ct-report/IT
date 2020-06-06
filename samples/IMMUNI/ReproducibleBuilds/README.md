@@ -99,7 +99,7 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 
 ![](photo_actionwebview.png)
 
-Clean+Rebuild doesn't fix. Checking Logs in order to fix without editing the source code (WIP).
+Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help = mismatch still there. Checking Logs in order to fix without editing the source code (WIP).
 
 
 
