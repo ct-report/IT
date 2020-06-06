@@ -76,15 +76,15 @@ These files won't ever match :
 
 ## Classes.dex mismatch situation
 
-Owing to Kotlin mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+Owing to mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
-There is a mismatch during mapping/import = _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to a missing method in those 2 classes.
+There is indeed a mismatch during mapping/import = _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to a missing method in both classes.
 
 ![](photo_smalichk.png) 
 
 ![](photo_actionwebview.png)
 
-Checking Logs in order to fix without editing the source code (WIP).
+Clean+Rebuild doesn't fix. Checking Logs in order to fix without editing the source code (WIP).
 
 
 
