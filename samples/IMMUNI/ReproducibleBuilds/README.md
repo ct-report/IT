@@ -28,7 +28,9 @@ Name | Version
 -----|--------
 Android Gradle Plugin | 3.6.3
 Gradle | 5.6.4
-SDK | 23->29
+JDK | 1.8
+SDK | 23+29
+SDK Build-Tools | 29.0.3
 NDK side-by-side | 20.0.5594570 / 21.0.6113669
 
 ## Procedure
