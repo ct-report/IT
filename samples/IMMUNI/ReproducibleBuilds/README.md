@@ -74,9 +74,9 @@ These files won't match :
 
 ## Classes.dex situation
 
-Owing to Kotlin issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+Owing to Kotlin mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
-There is a confirmed mismatch import = _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java .
+There is a mismatch during mapping/import = _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to a missing method in those 2 classes.
 
 ![](photo_smalichk.png) 
 
