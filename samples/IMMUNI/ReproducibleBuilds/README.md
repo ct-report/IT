@@ -78,7 +78,22 @@ These files won't ever match :
 
 Owing to mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
-There is indeed a mismatch during mapping/import = _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to a missing method in both classes.
+There is indeed the import of _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to missing method calls.
+
+Wrong
+
+```
+import it.ministerodellasalute.immuni.HowitworksDirections;
+```
+
+Right
+
+```
+import it.ministerodellasalute.immuni.HomeDirections;
+import it.ministerodellasalute.immuni.HomeDirections.ActionHowitworks;
+import it.ministerodellasalute.immuni.HomeDirections.ActionOnboardingActivity;
+import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
+```
 
 ![](photo_smalichk.png) 
 
