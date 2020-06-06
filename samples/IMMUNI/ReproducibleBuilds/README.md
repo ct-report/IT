@@ -31,7 +31,7 @@ Gradle | 5.6.4
 JDK | 1.8
 SDK | 23+29
 SDK Build-Tools | 29.0.3
-NDK side-by-side | 20.0.5594570 / 21.0.6113669
+NDK side-by-side | 20.0.5594570
 
 ## Procedure
 
