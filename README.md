@@ -20,6 +20,7 @@ Website | https://www.immuni.italia.it/
 
 Build | Link
 ------|-----
+1.0.2 #1021606 Play Store | https://apklab.io/apk.html?hash=fe00b76fe1ea072fea925226ca09d5a859238ac9dbd004e127324f9fec5841e5
 1.0.1 #1011346 Play Store | https://apklab.io/apk.html?hash=873d3125965864e94dd4230dabe4c127aa8104d769607be8d0b6f3ccf7b647ca
 1.0.0 #1000975 Play Store | https://apklab.io/apk.html?hash=5e1c53dd55d28e91de78109e3cdac4797ba551c79f3608e8b517be243dd4535f
 1.0.0 #1000975 Release | https://apklab.io/apk.html?hash=8736a2c233e368b9b9c160f4b1c828329bff70d70bb1c3678aff0eaa11c555e7
@@ -32,6 +33,7 @@ Build | Link
 
 Build | Link
 ------|-----
+1.0.2 #1021606 Play Store | https://www.joesandbox.com/analysis/236284/0/html
 1.0.1 #1011346 Play Store | https://www.joesandbox.com/analysis/235349/0/html
 1.0.0 #1000975 Play Store | https://www.joesandbox.com/analysis/234702/0/html
 1.0.0 #1000975 Release | https://www.joesandbox.com/analysis/234402/0/html
