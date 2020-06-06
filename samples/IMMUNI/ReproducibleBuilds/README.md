@@ -22,7 +22,7 @@ keyAlias=<your_key_alias>
 storePassword=<your_keystore_password>
 ```
 		
-- Check installed SDK & NDK side-by-side in Android Studio (3.6.3 / 4.0) system settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones) 
+- Arrange settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones). **Android Studio 4.0** settings : 
 
 Name | Version
 -----|--------
