@@ -99,7 +99,9 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 
 ![](photo_actionwebview.png)
 
-Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help = mismatch still there. Checking Logs in order to fix without editing the source code (WIP).
+Issue with annotations management. However, Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help yet = mismatch still there. 
+
+Checking Logs in order to arrange environment/dependencies/build-scripts without editing the source files (WIP).
 
 
 
