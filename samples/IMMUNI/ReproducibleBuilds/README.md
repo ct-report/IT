@@ -4,7 +4,7 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
 
 ## Preliminary Measures
 
-- Manual declaration of BUILD_NUMBER in <project>/build.gradle in order to avoid any versioning issues
+- Manual declaration of BUILD_NUMBER in <project>/build.gradle in order to avoid build-version mismatch
 
 ```
         computeVersionCode = { ->
@@ -13,7 +13,7 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
         }
 ```
 
-- Define own keystore/key in <project>/template.properties
+- Set keystore/key in <project>/template.properties
 
 ```
 storeFile=<your_location/keystore.jks>
@@ -57,7 +57,7 @@ adb shell pm path it.ministerodellasalute.immuni
 
 ## Comparison
 
-These files won't match :
+These files won't ever match :
 
 - AndroidManifest.xml ( _changes performed by Google Play during app publishing_ )
 
@@ -74,7 +74,7 @@ These files won't match :
 ![](photo_manifest_mf.png)
 
 
-## Classes.dex situation
+## Classes.dex mismatch situation
 
 Owing to Kotlin mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
