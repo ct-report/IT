@@ -1,19 +1,28 @@
-# Reproducible Build tests for Immuni - build 1.0.1 #1011346
+# Reproducible Build tests for Immuni
+build 1.0.1 #1011346 \
+build 1.0.2 #1021606
 
 Some instructions are officially provided by **Bending Spoons** on Immuni Documentation Repo - [HERE](https://github.com/immuni-app/immuni-documentation/blob/master/Technology%20Description.md#reproducible-builds).
 
 ## Preliminary Measures
 
-- Manual declaration of BUILD_NUMBER in <project>/build.gradle in order to avoid build-version mismatch
+- **1.** Manual declaration of BUILD_NUMBER in <project>/build.gradle in order to avoid any build-version mismatch
+
+Play Store Release | <build_number>
+-------------------|---------------
+1.0.1 | 1346
+1.0.2 | 1606
 
 ```
         computeVersionCode = { ->
-            return (versionMajor * 1000000) + (versionMinor * 100000) + (versionPatch * 10000) + 1346
+            return (versionMajor * 1000000) + (versionMinor * 100000) + (versionPatch * 10000) + <build_number>
                     // Integer.valueOf(System.env.BUILD_NUMBER ?: 0)
         }
 ```
 
-- Set keystore/key in <project>/template.properties
+- **2.** Arrange package signature situation. There are 2 ways to do so.
+
+(2A) Generate your own certificate & arrange keystore/key params into <project>/template.properties
 
 ```
 storeFile=<your_location/keystore.jks>
@@ -21,8 +30,39 @@ keyPassword=<your_key_password>
 keyAlias=<your_key_alias>
 storePassword=<your_keystore_password>
 ```
+
+(2B) Comment certificate signing for release build variant in <project>/app/build.gradle
+
+```
+//    signingConfigs {
+//        release {
+//            keyAlias appProperties['keyAlias']
+//            keyPassword appProperties['keyPassword']
+//            storeFile file(appProperties['storeFile'])
+//            storePassword appProperties['storePassword']
+//        }
+//    }
+    defaultConfig {
+        applicationId "it.ministerodellasalute.immuni"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+
+        setProperty("archivesBaseName", "Immuni" + "-" + versionName + "build" + versionCode)
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+```
 		
-- Arrange settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones). **Android Studio 4.0** settings : 
+- **3.** Arrange environment settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones). These are the environment settings, that have been tested with **Android Studio 4.0** (Linux / Windows) and **Docker** (see attached Dockerfile) : 
 
 Name | Version
 -----|--------
@@ -32,6 +72,8 @@ JDK | 1.8
 SDK | 23+29
 SDK Build-Tools | 29.0.3
 NDK side-by-side | 20.0.5594570
+
+---------------------------------------------
 
 ## Procedure
 
@@ -43,10 +85,18 @@ NDK side-by-side | 20.0.5594570
 java -jar bundletool-all-0.15.0.jar get-device-spec --output=<json_filename>.json
 ```
 
-- Extract specific APKs for your device from aab
+- Extract specific APKs for your device from aab.
+
+Build 1.0.1 #1011346
 
 ```
 java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.0.1build1011346-release.aab --output=Immuni_1011346.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
+```
+
+Build 1.0.2 #1021606
+
+```
+java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.0.2build1021606-release.aab --output=Immuni_1021606.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
 ```
 
 - Locate APKs on your device & extract them through ADB pull, Amaze, etc.
@@ -54,6 +104,8 @@ java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.jso
 ```
 adb shell pm path it.ministerodellasalute.immuni
 ```
+
+--------------------------------------
 
 ## Comparison
 
@@ -76,17 +128,17 @@ These files won't ever match :
 
 ## Classes.dex mismatch situation
 
-Owing to mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+Owing to import mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
 
 There is indeed the import of _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to missing method calls.
 
-Wrong
+Wrong import
 
 ```
 import it.ministerodellasalute.immuni.HowitworksDirections;
 ```
 
-Right
+Right import
 
 ```
 import it.ministerodellasalute.immuni.HomeDirections;
@@ -99,10 +151,6 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 
 ![](photo_actionwebview.png)
 
-Issue with annotations management. However, Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help yet = mismatch still there. 
+It seems an issue with annotations management / environment settings&plugins alignment. However, Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help yet = mismatch still there. 
 
-Checking Logs in order to arrange environment/dependencies/build-scripts without editing the source files (WIP).
-
-
-
-
+Waiting for release of build 1.1.0 in order to perform new tests, by only changing environment/dependencies/build-scripts.
