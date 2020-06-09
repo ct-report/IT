@@ -1,6 +1,8 @@
 # Reproducible Build tests for Immuni
-build 1.0.1 #1011346 \
-build 1.0.2 #1021606
+**build 1.1.0 #1101922 -> OK** \
+build 1.0.2 #1021606 -> __2 classes import mismatch__
+build 1.0.1 #1011346 -> __2 classes import mismatch__
+
 
 Some instructions are officially provided by **Bending Spoons** on Immuni Documentation Repo - [HERE](https://github.com/immuni-app/immuni-documentation/blob/master/Technology%20Description.md#reproducible-builds).
 
@@ -8,10 +10,11 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
 
 - **1.** Manual declaration of BUILD_NUMBER in <project>/build.gradle in order to avoid any build-version mismatch
 
-Play Store Release | <build_number>
--------------------|---------------
-1.0.1 | 1346
-1.0.2 | 1606
+Play Store Release | Tag (Github) | <build_number>
+-------------------|--------------|---------------
+1.1.0 | Immuni-1.1.0build1101922 | 1922
+1.0.2 | Immuni-1.0.2build1021606 | 1606
+1.0.1 | Immuni-1.0.1build1011346 | 1346
 
 ```
         computeVersionCode = { ->
@@ -22,7 +25,7 @@ Play Store Release | <build_number>
 
 - **2.** Arrange package signature situation. There are 2 ways to do so.
 
-(2A) Generate your own certificate & arrange keystore/key params into <project>/template.properties
+(2A) Suggested : Generate your own certificate & arrange keystore/key params into <project>/template.properties
 
 ```
 storeFile=<your_location/keystore.jks>
@@ -69,15 +72,18 @@ Name | Version
 Android Gradle Plugin | 3.6.3
 Gradle | 5.6.4
 JDK | 1.8
-SDK | 23+29
+SDK | 29 (+23 not compulsory)
 SDK Build-Tools | 29.0.3
 NDK side-by-side | 20.0.5594570
+
 
 ---------------------------------------------
 
 ## Procedure
 
-- Gradle sync & build project / signed aab bundle for Release variant
+- Gradle sync & build signed aab bundle (2A) or unsigned aab bundle (2B) for Release variant
+
+You can use Android Studio 4.0 or arrange your build-environment ( __release source download + signature arrangements + ./gradlew clean + ./gradlew bundleRelease__ ) on a Docker image using provided dockerfile .
 
 - Connect your device through USB debug and use [Bundletool](https://developer.android.com/studio/command-line/bundletool) to create the JSON file
 
@@ -87,16 +93,22 @@ java -jar bundletool-all-0.15.0.jar get-device-spec --output=<json_filename>.jso
 
 - Extract specific APKs for your device from aab.
 
-Build 1.0.1 #1011346
+Build 1.1.0 #1101922
 
 ```
-java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.0.1build1011346-release.aab --output=Immuni_1011346.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
+java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.1.0build1101922-release.aab --output=Immuni_1101922.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
 ```
 
 Build 1.0.2 #1021606
 
 ```
 java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.0.2build1021606-release.aab --output=Immuni_1021606.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
+```
+
+Build 1.0.1 #1011346
+
+```
+java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-1.0.1build1011346-release.aab --output=Immuni_1011346.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
 ```
 
 - Locate APKs on your device & extract them through ADB pull, Amaze, etc.
@@ -109,7 +121,13 @@ adb shell pm path it.ministerodellasalute.immuni
 
 ## Comparison
 
-These files won't ever match :
+You can use Android Studio APK Analyzer, Python script apkdiff, APK extraction & smali comparison, etc. .
+
+**Everything OK with build 1.1.0** - read classes mismatch notice for builds 1.0.1 & 1.0.2 .
+
+![](photo_110_comparison.png)
+
+Keep in mind that these files won't ever match :
 
 - AndroidManifest.xml ( _changes performed by Google Play during app publishing_ )
 
@@ -126,9 +144,9 @@ These files won't ever match :
 ![](photo_manifest_mf.png)
 
 
-## Classes.dex mismatch situation
+## Classes.dex mismatch situation - builds 1.0.1 & 1.0.2
 
-Owing to import mapping issues there is still a mismatch between Classes.dex files = Play Store version has 636 Bytes more than compiled one.
+Owing to import mapping issues there is a mismatch between Classes.dex files = Play Store versions of 1.0.1 & 1.0.2 have 636 Bytes more than compiled ones.
 
 There is indeed the import of _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to missing method calls.
 
@@ -153,4 +171,4 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 
 It seems an issue with annotations management / environment settings&plugins alignment. However, Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't help yet = mismatch still there. 
 
-Waiting for release of build 1.1.0 in order to perform new tests, by only changing environment/dependencies/build-scripts.
+Such situation has been fixed by **Bending Spoons** on build 1.1.0 = OK Reproducible Builds. 
