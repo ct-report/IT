@@ -80,6 +80,7 @@ SDK | 29 (+23 not compulsory)
 SDK Build-Tools | 29.0.3
 NDK side-by-side | 20.0.5594570
 
+- **4.** Since build 1.3.0 - #1305330 : Align the value of the SafetyNET API keys to the value of the official packages - see declaration in the template.properties file. For obvious reasons, these API keys aren't exposed on Github. However, owing to the lack of obfuscation, such value can be easily retrieved through decompilation of the official packages. 
 
 ---------------------------------------------
 
