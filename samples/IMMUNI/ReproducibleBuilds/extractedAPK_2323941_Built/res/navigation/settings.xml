@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/settings_nav" app:startDestination="@id/settingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/webview" />
+    <include app:graph="@navigation/faq" />
+    <include app:graph="@navigation/data_upload" />
+    <fragment android:label="homeFragment" android:name="it.ministerodellasalute.immuni.ui.settings.SettingsFragment" android:id="@id/settingsFragment" />
+    <action android:id="@id/action_data_upload_nav" app:destination="@id/data_upload" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    <action android:id="@id/action_faq" app:destination="@id/faq_nav" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    <activity android:label="OnboardingActivity" android:name="it.ministerodellasalute.immuni.ui.onboarding.OnboardingActivity" android:id="@id/onboardingActivity">
+        <argument android:name="isEditingProvince" app:argType="boolean" />
+    </activity>
+    <action android:id="@id/action_onboarding_activity" app:destination="@id/onboardingActivity" />
+    <action android:id="@id/action_webview" app:destination="@id/webview_nav">
+        <argument android:name="url" app:argType="string" app:nullable="false" />
+    </action>
+    <dialog android:name="it.ministerodellasalute.immuni.ui.privacy.PrivacyDialogFragment" android:id="@id/privacy" />
+    <action android:id="@id/action_privacy" app:destination="@id/privacy" />
+    <dialog android:name="it.ministerodellasalute.immuni.ui.support.SupportDialogFragment" android:id="@id/support" />
+    <action android:id="@id/action_support" app:destination="@id/support" />
+    <activity android:label="CountriesOfInterestActivity" android:name="it.ministerodellasalute.immuni.ui.countriesofinterest.CountriesOfInterestActivity" android:id="@id/countriesOfInterestActivity" />
+    <action android:id="@id/action_countries_of_interest" app:destination="@id/countriesOfInterestActivity" />
+</navigation>

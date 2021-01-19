@@ -1,10 +1,12 @@
 # Reproducible Build tests for Immuni
+build 2.3.0 #2323941 -> _2 classes import mismatch_ \
+. . .
 **build 1.1.0 #1101922 -> OK** \
 build 1.0.2 #1021606 -> _2 classes import mismatch_ \
 build 1.0.1 #1011346 -> _2 classes import mismatch_
 
 
-Some instructions are officially provided by **Bending Spoons** on Immuni Documentation Repo - [HERE](https://github.com/immuni-app/immuni-documentation/blob/master/Technology%20Description.md#reproducible-builds).
+Some instructions are officially provided by **Bending Spoons** on Immuni Documentation Repo - [HERE](https://github.com/immuni-app/immuni-documentation/blob/master/Technology.md#android).
 
 ## Preliminary Measures
 
@@ -12,6 +14,8 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
 
 Play Store Release | Tag (Github) | <build_number>
 -------------------|--------------|---------------
+2.3.0 | Immuni-2.3.0build2323941 | 23941
+. . . | . . .                    | . . .
 1.1.0 | Immuni-1.1.0build1101922 | 1922
 1.0.2 | Immuni-1.0.2build1021606 | 1606
 1.0.1 | Immuni-1.0.1build1011346 | 1346
