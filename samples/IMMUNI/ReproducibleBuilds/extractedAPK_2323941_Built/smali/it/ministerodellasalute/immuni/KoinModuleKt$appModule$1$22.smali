@@ -117,7 +117,7 @@
 
     invoke-static {v3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v2, "***REMOVED***"
+    const-string v2, "example"
 
     const/4 v4, 0x1
 
