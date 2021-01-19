@@ -106,7 +106,7 @@
 
     move-result-object p1
 
-    const-string p2, "API KEY: ***REMOVED***"
+    const-string p2, "API KEY: example"
 
     const/4 v0, 0x0
 
