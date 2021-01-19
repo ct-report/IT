@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: base-master_RM.apk
+apkFileName: base-master.apk
 compressionType: false
 doNotCompress:
 - arsc

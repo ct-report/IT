@@ -333,7 +333,7 @@ Name: build-data.properties
 SHA-256-Digest: 8IFA/Gbdz/s3Hq3lJLLg+n6xYwROTamwjp9WTDndg4k=
 
 Name: classes.dex
-SHA-256-Digest: po1u0H7XY5Zw9AMENAGDTXaLaPA6kZYWMrHQqd7U49M=
+SHA-256-Digest: L40PBDQd1gpgJ32Yyr9kFlpWkFbZGaJNCYOI8sz7DJs=
 
 Name: classes2.dex
 SHA-256-Digest: sZQHLKDSXpyxWeEkwKKxym1EPBf5IHcUTTLVU1YUNYA=

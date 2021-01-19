@@ -12,9 +12,9 @@
 
 .field public static final FLAVOR:Ljava/lang/String; = ""
 
-.field public static final SAFETY_NET_API_KEY:Ljava/lang/String; = "example"
+.field public static final SAFETY_NET_API_KEY:Ljava/lang/String; = "***REMOVED***"
 
-.field public static final SAFETY_NET_TEST_API_KEY:Ljava/lang/String; = "example"
+.field public static final SAFETY_NET_TEST_API_KEY:Ljava/lang/String; = "***REMOVED***"
 
 .field public static final VERSION_CODE:I = 0x2375e5
 
