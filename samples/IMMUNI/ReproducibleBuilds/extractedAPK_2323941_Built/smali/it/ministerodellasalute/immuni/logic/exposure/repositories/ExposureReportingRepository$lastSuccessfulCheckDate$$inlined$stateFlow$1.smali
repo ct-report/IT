@@ -1,4 +1,4 @@
-.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;
+.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;
 .super Lkotlin/jvm/internal/Lambda;
 .source "KVStorage.kt"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository;-><init>(Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;)V
+    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository;->getLastSuccessfulCheckDate()Lkotlinx/coroutines/flow/StateFlow;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lit/ministerodellasalute/immuni/logic/exposure/models/ExposureStatus;",
+        "Ljava/util/Date;",
         ">;"
     }
 .end annotation
@@ -45,9 +45,9 @@
         "invoke",
         "()Ljava/lang/Object;",
         "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$1$getObject$1",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$$inlined$synchronized$lambda$4",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$$special$$inlined$get$2",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$stateFlow$$inlined$synchronized$lambda$2"
+        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$$inlined$synchronized$lambda$3",
+        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$$special$$inlined$get$1",
+        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$stateFlow$$inlined$synchronized$lambda$1"
     }
     k = 0x3
     mv = {
@@ -70,11 +70,11 @@
 .method public constructor <init>(Ljava/lang/String;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;)V
     .locals 0
 
-    iput-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->$k:Ljava/lang/String;
+    iput-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->$k:Ljava/lang/String;
 
-    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
-    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
+    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
 
     const/4 p1, 0x0
 
@@ -90,7 +90,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lit/ministerodellasalute/immuni/logic/exposure/models/ExposureStatus;"
+            "Ljava/util/Date;"
         }
     .end annotation
 
@@ -98,13 +98,13 @@
 
     .line 136
     :try_start_0
-    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
     invoke-virtual {v1}, Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;->get_sharedPrefs()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->$k:Ljava/lang/String;
+    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->$k:Ljava/lang/String;
 
     const-string v3, ""
 
@@ -115,7 +115,7 @@
     if-eqz v1, :cond_0
 
     .line 137
-    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
     invoke-virtual {v2}, Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;->getMoshi()Lcom/squareup/moshi/Moshi;
 
@@ -126,7 +126,7 @@
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 260
-    const-class v3, Lit/ministerodellasalute/immuni/logic/exposure/models/ExposureStatus;
+    const-class v3, Ljava/util/Date;
 
     invoke-virtual {v2, v3}, Lcom/squareup/moshi/Moshi;->adapter(Ljava/lang/Class;)Lcom/squareup/moshi/JsonAdapter;
 

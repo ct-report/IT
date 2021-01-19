@@ -1,4 +1,4 @@
-.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;
+.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;
 .super Lkotlin/jvm/internal/Lambda;
 .source "KVStorage.kt"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository;->lastProcessedChunk(I)I
+    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository;->getInfoWithExposureLastReportingMonth()Ljava/lang/Integer;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
         0x3
     }
     d1 = {
-        "\u0000\\\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0004\n\u0002\u0008\u0004\n\u0002\u0008\u0004\n\u0002\u0008\u0005\u0010\u0000\u001a\u0004\u0018\u0001H\u0001\"\n\u0008\u0000\u0010\u0001\u0018\u0001*\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004\u00a8\u0006\u0007"
+        "\u0000(\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0003\n\u0002\u0008\u0003\n\u0002\u0008\u0004\u0010\u0000\u001a\u0004\u0018\u0001H\u0001\"\n\u0008\u0000\u0010\u0001\u0018\u0001*\u00020\u0002H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004\u00a8\u0006\u0006"
     }
     d2 = {
         "<anonymous>",
@@ -45,8 +45,7 @@
         "invoke",
         "()Ljava/lang/Object;",
         "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$1$getObject$1",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$$inlined$synchronized$lambda$2",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$$inlined$get$1"
+        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$get$$inlined$synchronized$lambda$1"
     }
     k = 0x3
     mv = {
@@ -69,11 +68,11 @@
 .method public constructor <init>(Ljava/lang/String;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;)V
     .locals 0
 
-    iput-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->$k:Ljava/lang/String;
+    iput-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->$k:Ljava/lang/String;
 
-    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
-    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
+    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
 
     const/4 p1, 0x0
 
@@ -97,13 +96,13 @@
 
     .line 136
     :try_start_0
-    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
     invoke-virtual {v1}, Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;->get_sharedPrefs()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->$k:Ljava/lang/String;
+    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->$k:Ljava/lang/String;
 
     const-string v3, ""
 
@@ -114,7 +113,7 @@
     if-eqz v1, :cond_0
 
     .line 137
-    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastProcessedChunk$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureAnalyticsStoreRepository$infoWithExposureLastReportingMonth$$inlined$get$1;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
     invoke-virtual {v2}, Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;->getMoshi()Lcom/squareup/moshi/Moshi;
 

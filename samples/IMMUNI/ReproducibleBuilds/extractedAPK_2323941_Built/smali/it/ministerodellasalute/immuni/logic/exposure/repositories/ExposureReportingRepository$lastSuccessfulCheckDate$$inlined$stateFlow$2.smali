@@ -1,4 +1,4 @@
-.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;
+.class public final Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;
 .super Lkotlin/coroutines/jvm/internal/SuspendLambda;
 .source "KVStorage.kt"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository;-><init>(Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;)V
+    value = Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository;->getLastSuccessfulCheckDate()Lkotlinx/coroutines/flow/StateFlow;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -58,7 +58,7 @@
         "invoke",
         "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
         "it/ministerodellasalute/immuni/extensions/storage/KVStorage$_addListener$1$1",
-        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$_addListener$$inlined$getOrPut$lambda$5"
+        "it/ministerodellasalute/immuni/extensions/storage/KVStorage$_addListener$$inlined$getOrPut$lambda$3"
     }
     k = 0x3
     mv = {
@@ -89,13 +89,13 @@
 .method public constructor <init>(Lkotlin/coroutines/Continuation;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;Ljava/lang/Object;Ljava/lang/Object;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;)V
     .locals 0
 
-    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iput-object p2, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
-    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$value$inlined:Ljava/lang/Object;
+    iput-object p3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$value$inlined:Ljava/lang/Object;
 
-    iput-object p4, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$defaultValue$inlined:Ljava/lang/Object;
+    iput-object p4, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$defaultValue$inlined:Ljava/lang/Object;
 
-    iput-object p5, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
+    iput-object p5, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
 
     const/4 p2, 0x3
 
@@ -133,25 +133,25 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;
+    new-instance v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;
 
-    iget-object v3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v3, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
-    iget-object v4, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$value$inlined:Ljava/lang/Object;
+    iget-object v4, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$value$inlined:Ljava/lang/Object;
 
-    iget-object v5, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$defaultValue$inlined:Ljava/lang/Object;
+    iget-object v5, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$defaultValue$inlined:Ljava/lang/Object;
 
-    iget-object v6, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
+    iget-object v6, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
 
     move-object v1, v0
 
     move-object v2, p3
 
-    invoke-direct/range {v1 .. v6}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;-><init>(Lkotlin/coroutines/Continuation;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;Ljava/lang/Object;Ljava/lang/Object;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;)V
+    invoke-direct/range {v1 .. v6}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;-><init>(Lkotlin/coroutines/Continuation;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;Ljava/lang/Object;Ljava/lang/Object;Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;)V
 
-    iput-object p1, v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->p$:Lkotlinx/coroutines/flow/FlowCollector;
+    iput-object p1, v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->p$:Lkotlinx/coroutines/flow/FlowCollector;
 
-    iput-object p2, v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->p$0:Ljava/lang/Throwable;
+    iput-object p2, v0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->p$0:Ljava/lang/Throwable;
 
     return-object v0
 .end method
@@ -165,15 +165,15 @@
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->create(Lkotlinx/coroutines/flow/FlowCollector;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    invoke-virtual {p0, p1, p2, p3}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->create(Lkotlinx/coroutines/flow/FlowCollector;Ljava/lang/Throwable;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     move-result-object p1
 
-    check-cast p1, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;
+    check-cast p1, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;
 
     sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    invoke-virtual {p1, p2}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -186,26 +186,26 @@
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     .line 179
-    iget v0, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->label:I
+    iget v0, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->label:I
 
     if-nez v0, :cond_0
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->p$:Lkotlinx/coroutines/flow/FlowCollector;
+    iget-object p1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->p$:Lkotlinx/coroutines/flow/FlowCollector;
 
     .line 180
     monitor-enter p1
 
     .line 181
     :try_start_0
-    iget-object v0, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
+    iget-object v0, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->this$0:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;
 
     invoke-virtual {v0}, Lit/ministerodellasalute/immuni/extensions/storage/KVStorage;->get_listeners()Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureStatusRepository$$special$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
+    iget-object v1, p0, Lit/ministerodellasalute/immuni/logic/exposure/repositories/ExposureReportingRepository$lastSuccessfulCheckDate$$inlined$stateFlow$2;->$key$inlined:Lit/ministerodellasalute/immuni/extensions/storage/KVStorage$Key;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
