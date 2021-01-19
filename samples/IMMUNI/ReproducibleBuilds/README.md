@@ -1,6 +1,6 @@
 # Reproducible Build tests for Immuni
 build 2.3.0 #2323941 -> _2 classes import mismatch_ \
-. . .
+. . . \
 **build 1.1.0 #1101922 -> OK** \
 build 1.0.2 #1021606 -> _2 classes import mismatch_ \
 build 1.0.1 #1011346 -> _2 classes import mismatch_
