@@ -1,4 +1,5 @@
 # Reproducible Build tests for Immuni
+build 2.2.1 #2325093 -> _1 class import mismatch_ \
 build 2.3.0 #2323941 -> _2 classes import mismatch_ \
 . . . \
 **build 1.1.0 #1101922 -> OK** \
@@ -14,6 +15,7 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
 
 Play Store Release | Tag (Github) | <build_number>
 -------------------|--------------|---------------
+2.2.1 | Immuni-2.2.1build2325093 | 25093
 2.3.0 | Immuni-2.3.0build2323941 | 23941
 . . . | . . .                    | . . .
 1.1.0 | Immuni-1.1.0build1101922 | 1922
@@ -98,6 +100,12 @@ java -jar bundletool-all-0.15.0.jar get-device-spec --output=<json_filename>.jso
 
 - Extract specific APKs for your device from aab.
 
+Build 2.2.1 #2325093
+
+```
+java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-2.2.1build2325093-release.aab --output=Immuni_2325093.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
+```
+
 Build 2.3.0 #2323941
 
 ```
@@ -156,11 +164,11 @@ Keep in mind that these files won't ever match :
 
 --------------------------------------
 
-## Classes.dex mismatch situation of releases 1.0.1 & 1.0.2 & . . . & 2.3.0
+## Classes.dex mismatch situation of releases 1.0.1 & 1.0.2 & . . . & 2.3.0 & 2.2.1
 
-Owing to import mapping issues there is a mismatch between Classes.dex files of such releases = Play Store versions of 1.0.1 & 1.0.2 have 636 Bytes more than compiled ones.
+Owing to import mapping issues there is a mismatch between Classes.dex files of such releases = Play Store versions of 1.0.1 & 1.0.2 have 636 Bytes more than compiled ones . 
 
-For such releases there is indeed the import of _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to missing method calls.
+For such releases there is indeed the import of _it.ministerodellasalute.immuni.HowitworksDirections instead of it.ministerodellasalute.immuni.HomeDirections_ in generated FaqActivityDirections.java and HowitworksDialogFragmentDirections.java, that leads to missing method calls. 
 
 Wrong import
 
@@ -183,4 +191,4 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 
 It's a source issue between annotations management and environment settings&plugins alignment. Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't fix it. 
 
-Such situation had been fixed by **Bending Spoons** on build 1.1.0 = OK Reproducible Builds for such release. However, it has been found again with next releases, including latest 2.3.0 .
+Such situation had been fixed by **Bending Spoons** on build 1.1.0 = OK Reproducible Builds for such release. However, it has been found again with next releases, including latest 2.3.0 & 2.2.1 - even though related only to 1 method reflection (168 Byte diff) .

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/bottom_sheet_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/background" app:layout_collapseMode="pin">
+        <ImageView android:id="@id/back" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_close" app:srcCompat="@drawable/ic_cross" />
+        <TextView android:ellipsize="end" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAllCaps="false" android:paddingStart="@dimen/activity_vertical_margin" android:paddingEnd="32.0dip" style="@style/H1NavBar" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/toolbarSeparator" layout="@layout/toolbar_separator" />
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/popupContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

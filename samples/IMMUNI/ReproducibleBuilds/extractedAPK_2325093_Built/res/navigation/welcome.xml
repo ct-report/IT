@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/welcome_nav" app:startDestination="@id/welcomeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/webview" />
+    <include app:graph="@navigation/howitworks" />
+    <fragment android:label="homeFragment" android:name="it.ministerodellasalute.immuni.ui.welcome.WelcomeFragment" android:id="@id/welcomeFragment" />
+    <activity android:label="OnboardingActivity" android:name="it.ministerodellasalute.immuni.ui.onboarding.OnboardingActivity" android:id="@id/onboardingActivity">
+        <argument android:name="isEditingProvince" app:argType="boolean" />
+    </activity>
+    <action android:id="@id/action_onboarding_activity" app:destination="@id/onboardingActivity" />
+    <action android:id="@id/action_webview" app:destination="@id/webview_nav">
+        <argument android:name="url" app:argType="string" app:nullable="false" />
+    </action>
+    <action android:id="@id/action_howitworks" app:destination="@id/howitworks_nav">
+        <argument android:name="showFaq" app:argType="boolean" app:nullable="false" />
+    </action>
+</navigation>

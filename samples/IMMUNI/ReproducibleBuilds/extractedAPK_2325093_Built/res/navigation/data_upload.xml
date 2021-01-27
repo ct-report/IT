@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/data_upload" app:startDestination="@id/otpFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="UploadVerification" android:name="it.ministerodellasalute.immuni.ui.otp.OtpFragment" android:id="@id/otpFragment" />
+    <action android:id="@id/action_upload_data" app:destination="@id/otpFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    <activity android:label="UploadDataActivity" android:name="it.ministerodellasalute.immuni.ui.upload.UploadDataActivity" android:id="@id/uploadActivity">
+        <argument android:name="token" app:argType="it.ministerodellasalute.immuni.ui.otp.OtpToken" app:nullable="false" />
+    </activity>
+    <action android:id="@id/action_upload_activity" app:destination="@id/uploadActivity" />
+    <dialog android:name="it.ministerodellasalute.immuni.ui.howtouploadpositive.HowToUploadPositiveDialogFragment" android:id="@id/howToUploadPositive" />
+    <action android:id="@id/action_how_to_upload_positive" app:destination="@id/howToUploadPositive" />
+</navigation>
