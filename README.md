@@ -11,7 +11,7 @@ On April 22, 2020, it has been announced that IMMUNI would no longer use a centr
 
 **On June 1, 2020 first official release has been published on Google Play Store.**
 
-** On January 29, 2021 first release on Huawei App Gallery, that supports both HMS Contact Shield API & Apple+Google Exposure Notifications API.** It allows to run the official app also on the latest GMS uncertified devices by Honor/Huawei.
+**On January 29, 2021 first release on Huawei App Gallery, that supports both HMS Contact Shield API & Apple+Google Exposure Notifications API.** It allows to run the official app also on the latest GMS uncertified devices by Honor/Huawei.
 
 Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalute.immuni
 -----------|-----------------------------------------------------------------------------
