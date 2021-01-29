@@ -1,20 +1,23 @@
 # IT
 Contact Tracing - Italy
 
-On April 16, the COVID-19 emergency commissioner has declared **IMMUNI** - developed by Bending Spoons - as the official app of the Italian Government.
+On April 16, 2020, the COVID-19 emergency commissioner has declared **IMMUNI** - developed by Bending Spoons - as the official app of the Italian Government.
 
-On April 22, it has been announced that IMMUNI would no longer use a centralized model (PEPP-PT), but instead a decentralized one (DP^3T based) together with the new Apple+Google 'Exposure Notification' (BLE Contact Tracing) API. The release of such Apple+Google API to developers is scheduled for April 28.
+On April 22, 2020, it has been announced that IMMUNI would no longer use a centralized model (PEPP-PT), but instead a decentralized one (DP^3T based) together with the new Apple+Google 'Exposure Notification' (BLE Contact Tracing) API. The release of such Apple+Google API to developers is scheduled for April 28.
 
-**On May 23 the first public release of source code for iOS/Android apps & CI Scheduler has been uploaded to Github.**
+**On May 23, 2020, the first public release of source code for iOS/Android apps & CI Scheduler has been uploaded to Github.**
 
-**On May 28 also the first public release of source code for backend (Common, OTP, Analytics, App Configuration, Exposure Ingestion & Reporting) has been uploaded to Github.**
+**On May 28, 2020 also the first public release of source code for backend (Common, OTP, Analytics, App Configuration, Exposure Ingestion & Reporting) has been uploaded to Github.**
 
-**On June 1st first official release has been published on Google Play Store.**
+**On June 1, 2020 first official release has been published on Google Play Store.**
+
+** On January 29, 2021 first release on Huawei App Gallery, that supports both HMS Contact Shield API & Apple+Google Exposure Notifications API.** It allows to run the official app also on the latest GMS uncertified devices by Honor/Huawei.
 
 Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalute.immuni
 -----------|-----------------------------------------------------------------------------
 Sources & Documentation | https://github.com/immuni-app 
 Website | https://www.immuni.italia.it/
+Huawei AppGallery | https://appgallery.huawei.com/#/app/C103200367
 
 Version | Release Date
 --------|-------------
@@ -34,11 +37,13 @@ Version | Release Date
 1.0.1 | Jun 3, 2020
 1.0.0 | Jun 1, 2020
 
+
 - APKLAB Analysis
 
 Build | Link
 ------|-----
 2.2.1 #2325093 Play Store | https://apklab.io/apk.html?hash=295d799863e8fb091788c3eaf0603ce7811d3e850185e9cd0bae56b5e95b8358
+2.2.1 #2300001 Huawei AppGallery | https://apklab.io/apk.html?hash=be7ade470d8f0197cd6e939045849918d5507860ac4476e40c1b0375cea4e3ef
 ... | ...
 1.2.0 #1203309 Play Store | https://apklab.io/apk.html?hash=d4e6b3ec7ffdc623801f25a54985b49dea9d814d912336b0286d377b5e7bbc07
 1.1.0 #1101922 Play Store | https://apklab.io/apk.html?hash=b8029350c24286eee54740bd5a62b4c455937958ccc591681d1d8167c95fb646
@@ -56,6 +61,7 @@ Build | Link
 Build | Link
 ------|-----
 2.2.1 #2325093 Play Store | https://www.joesandbox.com/analysis/346027/0/html
+2.2.1 #2300001 Huawei AppGallery | https://www.joesandbox.com/analysis/346225/0/html
 ... | ...
 1.2.0 #1203309 Play Store | https://www.joesandbox.com/analysis/239984/0/html
 1.1.0 #1101922 Play Store | https://www.joesandbox.com/analysis/236902/0/html

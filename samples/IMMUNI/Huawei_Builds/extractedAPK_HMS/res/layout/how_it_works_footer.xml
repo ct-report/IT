@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/recyclerView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permission_tutorial_how_immuni_works_action_description" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" style="@style/H4Section" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="bottom|center|right" android:id="@id/faqButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/permission_tutorial_how_immuni_works_action_cta" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="@style/RoundedButton" />
+</LinearLayout>

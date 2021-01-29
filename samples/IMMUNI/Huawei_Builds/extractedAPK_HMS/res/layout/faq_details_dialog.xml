@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/transparent" android:paddingLeft="30.0dip" android:paddingTop="24.0dip" android:paddingRight="30.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/question" android:layout_width="0.0dip" android:layout_height="wrap_content" android:fontFamily="@font/euclid_circular_bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/H3SectionHeading" />
+    <TextView android:id="@id/answer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/question" style="@style/P1Text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

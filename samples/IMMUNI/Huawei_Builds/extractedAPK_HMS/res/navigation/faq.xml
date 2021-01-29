@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/faq_nav" app:startDestination="@id/faqFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="FaqFragment" android:name="it.ministerodellasalute.immuni.ui.faq.FaqFragment" android:id="@id/faqFragment" />
+    <dialog android:label="FaqDetailsDialogFragment" android:name="it.ministerodellasalute.immuni.ui.faq.FaqDetailsDialogFragment" android:id="@id/faqDetailsDialogFragment">
+        <argument android:name="questionAndAnswer" app:argType="it.ministerodellasalute.immuni.ui.faq.QuestionAndAnswer" app:nullable="false" />
+    </dialog>
+    <action android:id="@id/action_faqDetailsDialogFragment" app:destination="@id/faqDetailsDialogFragment">
+        <argument android:name="questionAndAnswer" app:argType="it.ministerodellasalute.immuni.ui.faq.QuestionAndAnswer" app:nullable="false" />
+    </action>
+</navigation>
