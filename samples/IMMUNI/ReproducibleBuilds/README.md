@@ -192,3 +192,5 @@ import it.ministerodellasalute.immuni.HomeDirections.ActionWebview;
 It's a source issue between annotations management and environment settings&plugins alignment. Clean+Rebuild, Gradle/Environment Cache resets, starting from scratch on other systems, etc. don't fix it. 
 
 Such situation had been fixed by **Bending Spoons** on build 1.1.0 = OK Reproducible Builds for such release. However, it has been found again with next releases, including latest 2.3.0 & 2.2.1 - even though related only to 1 method reflection (168 Byte diff) .
+
+![](photo_221_comparison.png)

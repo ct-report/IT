@@ -16,10 +16,30 @@ Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalu
 Sources & Documentation | https://github.com/immuni-app 
 Website | https://www.immuni.italia.it/
 
+Version | Release Date
+--------|-------------
+2.2.1 | Jan 29, 2020
+2.2.0 | Dec 18, 2020
+2.1.1 | Nov 3, 2020
+2.1.0 | Oct 28, 2020
+2.0.0 | Oct 28, 2020
+1.5.0 | Sep 21, 2020
+1.4.1 | Sep 16, 2020
+1.4.0 | Sep 14, 2020
+1.3.1 | Aug 5, 2020
+1.3.0 | Jul 10, 2020
+1.2.0 | Jun 19, 2020
+1.1.0 | Jun 9, 2020
+1.0.2 | Jun 6, 2020
+1.0.1 | Jun 3, 2020
+1.0.0 | Jun 1, 2020
+
 - APKLAB Analysis
 
 Build | Link
 ------|-----
+2.2.1 #2325093 Play Store | https://apklab.io/apk.html?hash=295d799863e8fb091788c3eaf0603ce7811d3e850185e9cd0bae56b5e95b8358
+... | ...
 1.2.0 #1203309 Play Store | https://apklab.io/apk.html?hash=d4e6b3ec7ffdc623801f25a54985b49dea9d814d912336b0286d377b5e7bbc07
 1.1.0 #1101922 Play Store | https://apklab.io/apk.html?hash=b8029350c24286eee54740bd5a62b4c455937958ccc591681d1d8167c95fb646
 1.0.2 #1021606 Play Store | https://apklab.io/apk.html?hash=fe00b76fe1ea072fea925226ca09d5a859238ac9dbd004e127324f9fec5841e5
@@ -35,6 +55,8 @@ Build | Link
 
 Build | Link
 ------|-----
+2.2.1 #2325093 Play Store | https://www.joesandbox.com/analysis/346027/0/html
+... | ...
 1.2.0 #1203309 Play Store | https://www.joesandbox.com/analysis/239984/0/html
 1.1.0 #1101922 Play Store | https://www.joesandbox.com/analysis/236902/0/html
 1.0.2 #1021606 Play Store | https://www.joesandbox.com/analysis/236284/0/html
