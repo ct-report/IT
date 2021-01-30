@@ -21,7 +21,7 @@ Huawei AppGallery | https://appgallery.huawei.com/#/app/C103200367
 
 Version | Release Date
 --------|-------------
-2.2.1 | Jan 29, 2020
+2.2.1 | Jan 29, 2021
 2.2.0 | Dec 18, 2020
 2.1.1 | Nov 3, 2020
 2.1.0 | Oct 28, 2020
