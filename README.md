@@ -28,6 +28,7 @@ Huawei AppGallery | https://appgallery.huawei.com/#/app/C103200367
 
 Version | Release Date
 --------|-------------
+2.4.0 | Apr 7, 2021
 2.2.1 | Jan 29, 2021
 2.2.0 | Dec 18, 2020
 2.1.1 | Nov 3, 2020
@@ -49,6 +50,7 @@ Version | Release Date
 
 Build | Link
 ------|-----
+2.4.0 #2430850 Play Store | https://apklab.io/apk.html?hash=63ef3b54c3e5b3e61051583f813650f44493d5e7bab3fc10d5b2b71ad7a48def
 2.2.1 #2325093 Play Store | https://apklab.io/apk.html?hash=295d799863e8fb091788c3eaf0603ce7811d3e850185e9cd0bae56b5e95b8358
 2.2.1 #2300001 Huawei AppGallery | https://apklab.io/apk.html?hash=be7ade470d8f0197cd6e939045849918d5507860ac4476e40c1b0375cea4e3ef
 ... | ...
@@ -67,6 +69,7 @@ Build | Link
 
 Build | Link
 ------|-----
+2.4.0 #2430850 Play Store | https://www.joesandbox.com/analysis/383358/0/html
 2.2.1 #2325093 Play Store | https://www.joesandbox.com/analysis/346027/0/html
 2.2.1 #2300001 Huawei AppGallery | https://www.joesandbox.com/analysis/346225/0/html
 ... | ...
