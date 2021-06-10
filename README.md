@@ -98,18 +98,23 @@ Build | Link
 
 On April 1st, **SM_COVID19** - developed by Softmining - has been published on Google Play Store (App changed name on April 12).
 
-**There is no explicit evidence about which institution has provided the required authorizations (according to COVID-19 app guidelines).**
+**There is no explicit evidence about which institution has officially provided the required authorizations (according to COVID-19 app guidelines).**
 
-**The Italian Ministry for Digital Innovation - Paola Pisano - hasn't replied yet to the requests for checks and clarifications.**
+**The former Italian Ministry for Digital Innovation - Paola Pisano - never replied to the requests for checks and clarifications.**
 
-It's a centralized solution. Every 60 seconds or 5 minutes (according to outdoors/indoors mode) it checks proximity/interactions with other peers (via Bluetooth/BLE) and retrieves the device location (Wi-Fi and GPS - if allowed by the user). Then it uploads such data to a Firebase instance.
+**Private checks have anyway identified the Campania Region as the institutional sponsor behind the authorization for the publication of such app on the Google Play Store.**
+
+It's a centralized solution. Every 60 seconds or 5 minutes (according to outdoors/indoors mode) it checks proximity/interactions with other peers (via Bluetooth/BLE) and retrieves the device location (Wi-Fi and GPS - if allowed by the user). Then it uploads such data to a Firebase instance. 
+
+However, according to recent checks, since June 2020 the app started to collect also the rolling proximity identifiers of GAEN contact tracing apps & uploaded ALL the BLE interactions with other devices.
 
 Beta releases (before the submission to Play Store) had critical issues about data validation = database tampering with fake user & location data. Until now, production releases haven't been enabled to check past interactions with those users, that have been officially confirmed as infected by Health Authorities.
 
-There are still issues with User ID generation (simple concatenation of Android Device ID) and unneeded permissions.
+There are still issues with User ID generation (simple concatenation of Android Device ID until June 2020 & poorly hashed later) and unneeded permissions.
 
-App still in development (30k downloads from Google Play Store - 10k active users).
+More than 50k downloads from Google Play Store (more than 100k according to the publisher).
 
+**Latest release update (5.1 - July 2020) has been reported to Google Play Developer Support because of malicious code detections.** 
 
 Play Store | https://play.google.com/store/apps/details?id=it.softmining.projects.covid19.savelifestyle
 -----------|-------------------------------------------------------------------------------------------
@@ -120,6 +125,7 @@ Website | https://www.smcovid19.org/
 
 Build | Link
 ------|-----
+5.1 #35 | https://apklab.io/apk.html?hash=b5728080de8a6a1bdb8c3a2ff52ab88f81438415e0ea83b6c56c5b49bdec419e
 3.9 #25 | https://apklab.io/apk.html?hash=5bcbab60139be51484a46b888a51b19a9eaa278338b8adcaac512dfb804a3923
 3.8 #24 | https://apklab.io/apk.html?hash=bf815c40391c3a615130a2579b86e22ee3f903dad371dd7cc36a3ba8d02575f4
 3.6 #22 | https://apklab.io/apk.html?hash=5b012eb6e0cef92ffce352a84edbe4a9833d1dd6a507554efc2030bd34b7fc11
@@ -136,6 +142,7 @@ Build | Link
 
 Build | Link
 ------|-----
+5.1 #35 | https://www.joesandbox.com/analysis/432085/0/html
 3.9 #25 | https://www.joesandbox.com/analysis/236289/0/html
 3.8 #24 | https://www.joesandbox.com/analysis/235357/0/html
 3.6 #22 | https://www.joesandbox.com/analysis/229829/0/html
@@ -147,6 +154,14 @@ Build | Link
 2.6 #14 | https://www.joesandbox.com/analysis/223624/0/html
 2.5 #13 | https://www.joesandbox.com/analysis/223468/0/html
 2.4 #12 | https://www.joesandbox.com/analysis/223210/0/html
+
+- Additional Malicious Code detections for release 5.1 #35
+
+Website | Link
+--------|-----
+VirusTotal | https://www.virustotal.com/gui/file/b5728080de8a6a1bdb8c3a2ff52ab88f81438415e0ea83b6c56c5b49bdec419e/detection
+Pithus | https://beta.pithus.org/report/b5728080de8a6a1bdb8c3a2ff52ab88f81438415e0ea83b6c56c5b49bdec419e
+Triage | https://tria.ge/210609-5k9g3dm5j6
 
 ----------------------------------------------
 
