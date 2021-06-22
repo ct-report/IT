@@ -1,4 +1,5 @@
 # Reproducible Build tests for Immuni
+**build 2.5.0 #2533793 -> OK** \
 **build 2.4.0 #2430850 -> OK** \
 build 2.2.1 #2325093 -> _1 class import mismatch_ \
 build 2.3.0 #2323941 -> _2 classes import mismatch_ \
@@ -16,6 +17,7 @@ Some instructions are officially provided by **Bending Spoons** on Immuni Docume
 
 Play Store Release | Tag (Github) | <build_number>
 -------------------|--------------|---------------
+2.5.0 | Immuni-2.5.0build2533973 | 33973
 2.4.0 | Immuni-2.4.0build2430850 | 30850
 2.2.1 | Immuni-2.2.1build2325093 | 25093
 2.3.0 | Immuni-2.3.0build2323941 | 23941
@@ -73,7 +75,7 @@ storePassword=<your_keystore_password>
 //            signingConfig signingConfigs.release
 ```
 		
-- **3.** Arrange environment settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones). These are the environment settings, that have been tested with **Android Studio 4.0** (Linux / Windows) and **Docker** (see attached Dockerfile) : 
+- **3.** Arrange environment settings & avoid to upgrade gradle plugin if/when suggested (keeping project default ones). These are the environment settings, that have been tested with **Android Studio 4.0** (Linux / Windows) until release 2.4.0 / **Android Studio 4.2.1** since release 2.5.0 and **Docker** (see attached Dockerfile) : 
 
 Name | Version
 -----|--------
@@ -102,6 +104,10 @@ java -jar bundletool-all-0.15.0.jar get-device-spec --output=<json_filename>.jso
 
 - Extract specific APKs for your device from aab.
 
+Build 2.5.0 #2533973
+```
+java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-2.5.0build2533973-release.aab --output=Immuni_2533973.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
+```
 Build 2.4.0 #2430850
 ```
 java -jar bundletool-all-0.15.0.jar build-apks --device-spec=<json_filename>.json --bundle=Immuni-2.4.0build2430850-release.aab --output=Immuni_2430850.apks --ks=<your_location/keystore.jks> --ks-pass=pass:<your_keystore_password> --ks-key-alias=<your_key_alias> --key-pass=pass:<your_key_password>
@@ -148,9 +154,11 @@ adb shell pm path it.ministerodellasalute.immuni
 
 You can use Android Studio APK Analyzer, Python script apkdiff, APK extraction & smali comparison, etc. .
 
-**Everything OK with build 2.4.0** - read classes mismatch notice for builds 2.2.1 & 2.3.0 (unreleased).
+**Everything OK with builds 2.4.0 & 2.5.0** - read classes mismatch notice for builds 2.2.1 & 2.3.0 (unreleased).
 
 ![](photo_240_comparison.png)
+
+![](photo_250_comparison.png)
 
 **Everything OK with build 1.1.0** - read classes mismatch notice for builds 1.0.1 & 1.0.2 .
 

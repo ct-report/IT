@@ -20,6 +20,8 @@ On April 22, 2020, it has been announced that IMMUNI would no longer use a centr
 
 **On January 29, 2021 first release on Huawei App Gallery, that supports both HMS Contact Shield API & Apple+Google Exposure Notifications API.** It allows to run the official app also on the latest GMS uncertified devices by Honor/Huawei.
 
+**Since June 13, 2021 the app can be also used as a wallet to store EU Digital Green Certificates**.
+
 Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalute.immuni
 -----------|-----------------------------------------------------------------------------
 Sources & Documentation | https://github.com/immuni-app 
@@ -28,6 +30,7 @@ Huawei AppGallery | https://appgallery.huawei.com/#/app/C103200367
 
 Version | Release Date
 --------|-------------
+2.5.0 | Jun 13, 2021
 2.4.0 | Apr 7, 2021
 2.2.1 | Jan 29, 2021
 2.2.0 | Dec 18, 2020
@@ -50,6 +53,7 @@ Version | Release Date
 
 Build | Link
 ------|-----
+2.5.0 #2533973 Play Store | https://apklab.io/apk.html?hash=c1da46a5d5aaf2851c18be3992436af42c0db9bc0f89aecc061c86a792f2cc73
 2.4.0 #2430850 Play Store | https://apklab.io/apk.html?hash=63ef3b54c3e5b3e61051583f813650f44493d5e7bab3fc10d5b2b71ad7a48def
 2.2.1 #2325093 Play Store | https://apklab.io/apk.html?hash=295d799863e8fb091788c3eaf0603ce7811d3e850185e9cd0bae56b5e95b8358
 2.2.1 #2300001 Huawei AppGallery | https://apklab.io/apk.html?hash=be7ade470d8f0197cd6e939045849918d5507860ac4476e40c1b0375cea4e3ef
@@ -69,6 +73,7 @@ Build | Link
 
 Build | Link
 ------|-----
+2.5.0 #2533973 Play Store | https://www.joesandbox.com/analysis/438512/0/html
 2.4.0 #2430850 Play Store | https://www.joesandbox.com/analysis/383358/0/html
 2.2.1 #2325093 Play Store | https://www.joesandbox.com/analysis/346027/0/html
 2.2.1 #2300001 Huawei AppGallery | https://www.joesandbox.com/analysis/346225/0/html
