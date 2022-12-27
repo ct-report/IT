@@ -22,6 +22,13 @@ On April 22, 2020, it has been announced that IMMUNI would no longer use a centr
 
 **Since June 13, 2021 the app can be also used as a wallet to store EU Digital Green Certificates**.
 
+------
+
+> _**[Shutdown Notice](https://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=6115)**_
+> _**Starting December 31 2022, Immuni app won't be available for download from all official iOS/Android app-stores. Contact-tracing endpoints for keys/upload/analytics will be fully disabled & it will no longer be possible to download/update the app.**_ 
+
+------
+
 Play Store | https://play.google.com/store/apps/details?id=it.ministerodellasalute.immuni
 -----------|-----------------------------------------------------------------------------
 Sources & Documentation | https://github.com/immuni-app 
@@ -30,9 +37,22 @@ Huawei AppGallery | https://appgallery.huawei.com/#/app/C103200367
 
 Version | Release Date
 --------|-------------
+2.6.1   | May 31, 2022 **Universal APK - AppGallery ONLY**
+2.6.0   | Mar 21, 2022
+2.5.10  | Feb 18, 2022
+2.5.9   | Feb 3, 2022
+2.5.8   | Jan 21, 2022
+2.5.7   | Jan 3, 2022
+... | ...
+2.5.5   | Nov 25, 2021
+2.5.4   | Sep 23, 2021
+2.5.3   | Aug 3, 2021
+2.5.2   | Jul 26, 2021
+2.5.1   | Jun 22, 2021
 2.5.0 | Jun 13, 2021
 2.4.0 | Apr 7, 2021
 2.2.1 | Jan 29, 2021
+... | ...
 2.2.0 | Dec 18, 2020
 2.1.1 | Nov 3, 2020
 2.1.0 | Oct 28, 2020
@@ -53,6 +73,9 @@ Version | Release Date
 
 Build | Link
 ------|-----
+2.6.1 #2610000 Huawei AppGallery | https://apklab.io/apk.html?hash=f7e4789a1164039b8e56844d0c50ea998a2d192cdb6f2b8c0e8fc8bf923ed1cc
+2.6.0 #2641892 Play Store | https://apklab.io/apk.html?hash=52d03c594a6e598db5cd13fc8cccd7a917a822b23bb0d7a7451b41d73b3449ed
+... | ...
 2.5.0 #2533973 Play Store | https://apklab.io/apk.html?hash=c1da46a5d5aaf2851c18be3992436af42c0db9bc0f89aecc061c86a792f2cc73
 2.4.0 #2430850 Play Store | https://apklab.io/apk.html?hash=63ef3b54c3e5b3e61051583f813650f44493d5e7bab3fc10d5b2b71ad7a48def
 2.2.1 #2325093 Play Store | https://apklab.io/apk.html?hash=295d799863e8fb091788c3eaf0603ce7811d3e850185e9cd0bae56b5e95b8358
@@ -73,6 +96,9 @@ Build | Link
 
 Build | Link
 ------|-----
+2.6.1 #2610000 Huawei AppGallery | https://www.joesandbox.com/analysis/774409/0/html
+2.6.0 #2641892 Play Store | https://www.joesandbox.com/analysis/774435/0/html
+... | ...
 2.5.0 #2533973 Play Store | https://www.joesandbox.com/analysis/438512/0/html
 2.4.0 #2430850 Play Store | https://www.joesandbox.com/analysis/383358/0/html
 2.2.1 #2325093 Play Store | https://www.joesandbox.com/analysis/346027/0/html
@@ -88,10 +114,20 @@ Build | Link
 1.0.0 #1000000 Debug | https://www.joesandbox.com/analysis/232698/0/html
 1.0.0 #1000000 Release | https://www.joesandbox.com/analysis/232703/0/html
 
+- Pithus Report
+
+Build | Link
+------|-----
+2.6.1 #2610000 Huawei AppGallery | https://beta.pithus.org/report/f7e4789a1164039b8e56844d0c50ea998a2d192cdb6f2b8c0e8fc8bf923ed1cc
+2.6.0 #2641892 Google Play Store | https://beta.pithus.org/report/52d03c594a6e598db5cd13fc8cccd7a917a822b23bb0d7a7451b41d73b3449ed
+
 - VirusTotal Details
 
 Build | Link
 ------|-----
+2.6.1 #2610000 Huawei AppGallery | https://www.virustotal.com/gui/file/f7e4789a1164039b8e56844d0c50ea998a2d192cdb6f2b8c0e8fc8bf923ed1cc
+2.6.0 #2641892 Google Play Store | https://www.virustotal.com/gui/file/52d03c594a6e598db5cd13fc8cccd7a917a822b23bb0d7a7451b41d73b3449ed
+... | ...
 1.0.0 #1000563 Release | https://www.virustotal.com/gui/file/8f64b7fe497f94bc63cc1b3beeb5fe8ab7793b07e1c15aaceec11ff56c4c66a7/details
 1.0.0 #1000000 Debug | https://www.virustotal.com/gui/file/59ef69867e550205b227ae82d408ed18a95505af0ff5dd02173bbb6d29e4d983/details
 1.0.0 #1000000 Release | https://www.virustotal.com/gui/file/75c4bace9cffad60c6525bbd170b1430f090634720a9a01d133d3628b5a9c97d/details
